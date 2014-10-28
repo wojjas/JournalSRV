@@ -4,9 +4,21 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Newtonsoft;
+using System.Web.Http.Results;
 
 namespace Journal.Controllers
 {
+    public class JournalMessageInputModel
+    {
+        public string Message { get; set; }
+    }
+
+    public class JournalMessageOutputModel
+    {
+        public string Status { get; set; }
+    }
+
     public class MessageController : ApiController
     {
         public HttpResponseMessage Get()
