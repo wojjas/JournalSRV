@@ -1,11 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Newtonsoft;
 using System.Web.Http.Results;
+using System.Web.Http.Cors;
 
 namespace Journal.Controllers
 {
@@ -19,6 +19,7 @@ namespace Journal.Controllers
         public string Status { get; set; }
     }
 
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     public class MessageController : ApiController
     {
         public HttpResponseMessage Get()
@@ -28,13 +29,7 @@ namespace Journal.Controllers
                 Content = new StringContent("Message GET: Test message")
             };
         }
-        //public HttpResponseMessage Post()
-        //{
-        //    return new HttpResponseMessage()
-        //    {
-        //        Content = new StringContent("Message POST: Test message")
-        //    };
-        //}
+
         public JsonResult<JournalMessageOutputModel> Post(JournalMessageInputModel messageModel)
         {
             JsonResult<JournalMessageOutputModel> retValue = null;

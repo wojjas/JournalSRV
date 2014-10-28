@@ -26,3 +26,6 @@ C:\Users\Wojtek\Documents\Dev\SPA\MiscTests\JournalSRV\bin\System.Web.Http.WebHo
 C:\Users\Wojtek\Documents\Dev\SPA\MiscTests\JournalSRV\obj\Debug\Journal.csprojResolveAssemblyReference.cache
 C:\Users\Wojtek\Documents\Dev\SPA\MiscTests\JournalSRV\obj\Debug\Journal.dll
 C:\Users\Wojtek\Documents\Dev\SPA\MiscTests\JournalSRV\obj\Debug\Journal.pdb
+C:\Users\Wojtek\Documents\Dev\SPA\MiscTests\JournalSRV\bin\System.Web.Cors.dll
+C:\Users\Wojtek\Documents\Dev\SPA\MiscTests\JournalSRV\bin\System.Web.Http.Cors.dll
+C:\Users\Wojtek\Documents\Dev\SPA\MiscTests\JournalSRV\bin\System.Web.Http.Cors.xml

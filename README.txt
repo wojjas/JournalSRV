@@ -8,7 +8,8 @@ New project... C#, Web, "ASP .NET Web Application", Empty, Web Api
 
 CORS: (see http://enable-cors.org/)
 To make it possible to access this server's api from another domain:
-1) Add with NuGet: microsoft.aspnet.webapi.cors
+1) Add with NuGet: microsoft.aspnet.webapi and then microsoft.aspnet.webapi.cors
+   https://www.nuget.org/packages/Microsoft.AspNet.WebApi.Cors/5.2.2 
 2) Modify *Controller.cs with "using System.Web.Http.Cors;" & "[EnableCors(origins: "*", headers: "*", methods: "*")]"
 3) Modify WebApiConfig.cs with "config.EnableCors();"
 
